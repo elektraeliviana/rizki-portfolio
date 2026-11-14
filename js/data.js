@@ -1,889 +1,201 @@
-window.PROFILE_DATA = {
-  "name": "Elektra Eliviana",
-  "location": "Bandung, West Java, Indonesia · Open to Relocation",
-  "email": "elivianaelektra@gmail.com",
-  "headline": "Operations & Process Automation Specialist · AI Engineer in Training · Polymath",
-  "bio": "Elektra Eliviana is a polymath whose intellectual architecture spans mathematical modal logic, speculative botanical literature, classical piano virtuosity, fine art realism, and high-performance process automation — a rare convergence forged through Olympiad-level competition in mathematics and astronomy, rigorous academic study in Quranic hermeneutics, and hands-on community leadership at scale. A decorated competitive scholar and self-directed autodidact, she is currently deepening her technical edge through a mentor-led AI Engineering bootcamp while pursuing original research that bridges formal logic, Islamic metaphysics, and machine learning theory. Her work defies disciplinary boundaries, embodying the conviction that the most consequential innovations emerge precisely at the intersections others leave unexplored.",
-  "stats": {
-    "typingSpeed": "100 WPM · 98% Accuracy",
-    "englishLevel": "C2 Proficient · EF SET 71/100",
-    "communityManaged": "40,000+ Members Governed",
-    "chessTitle": "Campus Chess Champion 2025"
-  },
-  "socials": [
-    {
-      "platform": "github",
-      "url": "https://github.com/elektraeliviana/elektra-portfolio"
-    },
-    {
-      "platform": "youtube",
-      "url": "https://youtube.com/@fundrawingandmusic5045"
-    },
-    {
-      "platform": "bluesky",
-      "url": "https://bsky.app/profile/elektraeliviana.bsky.social"
-    },
-    {
-      "platform": "twitter",
-      "url": "https://x.com/ElektraEliviana"
-    },
-    {
-      "platform": "instagram",
-      "url": "https://instagram.com/elektraeliviana"
-    },
-    {
-      "platform": "discord",
-      "url": "e1ektra"
-    },
-    {
-      "platform": "email",
-      "url": "mailto:elivianaelektra@gmail.com"
-    }
-  ],
-  "languages": [
-    {
-      "flag": "🇬🇧",
-      "name": "English",
-      "level": "C2 Proficient / Professional Working",
-      "detail": "EF SET 71/100"
-    },
-    {
-      "flag": "🇮🇩",
-      "name": "Indonesian",
-      "level": "Native",
-      "detail": ""
-    },
-    {
-      "flag": "🇮🇩",
-      "name": "Sundanese",
-      "level": "Fluent",
-      "detail": ""
-    },
-    {
-      "flag": "🇯🇵",
-      "name": "Japanese",
-      "level": "Conversational",
-      "detail": "EJU Prep / JLPT Candidate"
-    },
-    {
-      "flag": "🇸🇦",
-      "name": "Arabic",
-      "level": "Conversational",
-      "detail": "Classical Hermeneutics"
-    },
-    {
-      "flag": "🇨🇳",
-      "name": "Mandarin (Simplified)",
-      "level": "Conversational Basics",
-      "detail": "Kunkwan Institute"
-    }
-  ],
-  "certificates": [
-    {
-      "title": "EF SET C2 Proficient",
-      "issuer": "EF Education First",
-      "year": 2026,
-      "file": "assets/certificates/ef-set.pdf"
-    },
-    {
-      "title": "Microsoft Applied Skills — Power Automate & Power Apps",
-      "issuer": "Microsoft",
-      "year": 2026,
-      "file": "assets/certificates/microsoft-power-automate.pdf"
-    },
-    {
-      "title": "Python & Deep Learning Track",
-      "issuer": "Kaggle / Google",
-      "year": 2026,
-      "file": "assets/certificates/kaggle-python.pdf"
-    },
-    {
-      "title": "Typing Speed 100 WPM Certified",
-      "issuer": "Typing.com",
-      "year": 2026,
-      "file": "assets/certificates/Elektra-WPM.pdf"
-    },
-    {
-      "title": "Fundamentals of Digital Marketing",
-      "issuer": "Google Digital Garage",
-      "year": 2026,
-      "file": "assets/certificates/google-digital-marketing.pdf"
-    },
-    {
-      "title": "AAJI & AASI Licensed Financial Agent",
-      "issuer": "PT FWD Insurance",
-      "year": 2026,
-      "validity": "2026–2028",
-      "file": "assets/certificates/fwd-aaji.pdf"
-    },
-    {
-      "title": "TOEFL Prediction Certificate",
-      "issuer": "TOEFL Prediction Program",
-      "year": 2026,
-      "file": "assets/certificates/toefl-prediction.pdf"
-    },
-    {
-      "title": "Amazing Mandarin Conversation Certificate",
-      "issuer": "PT Kunkwan Mandarin",
-      "year": 2026,
-      "file": "assets/certificates/mandarin-conversation.pdf"
-    },
-    {
-      "title": "Chess IAPI Champion Certificate",
-      "issuer": "IAPI — Institut Agama Islam Persis",
-      "year": 2025,
-      "file": "assets/certificates/chess-iapi-champion.pdf"
-    }
-  ],
-  "education": [
-    {
-      "degree": "Bachelor Degree — Quranic Studies & Tafsir",
-      "institution": "IAIPI Bandung",
-      "period": "2024–2026",
-      "gpa": 3.54,
-      "type": "undergraduate"
-    },
-    {
-      "degree": "Associate Degree — Arabic Language",
-      "institution": "Al-Imarat Bandung",
-      "period": "2021–2024",
-      "grade": 72.06,
-      "type": "associate"
-    },
-    {
-      "degree": "High School — Natural Sciences (IPA)",
-      "institution": "SMAN 6 Cimahi",
-      "period": "2018–2021",
-      "grade": 78.5,
-      "type": "highschool"
-    },
-    {
-      "degree": "AI Engineering Bootcamp — Mentor-Led",
-      "institution": "Online / Mentor-Led Program",
-      "period": "2026–Present",
-      "type": "bootcamp"
-    },
-    {
-      "degree": "Japanese Language Studies",
-      "institution": "PT Yurinoki Nihongo",
-      "period": "2026–Present",
-      "type": "language"
-    }
-  ],
-  "experience": [
-    {
-      "role": "Head Administrator / Community Manager",
-      "organization": "Empire of Caveine",
-      "period": "June 2024–Present",
-      "highlights": [
-        "Governed a 40,000+ member digital community",
-        "Oversaw a 16-member staff team",
-        "Authored SOPs and incident protocols",
-        "Achieved 87.5% task completion rate"
-      ]
-    },
-    {
-      "role": "Operations & Administration Intern",
-      "organization": "Jamil Industry",
-      "period": "June 2025–July 2025",
-      "highlights": [
-        "Processed 50–100 daily orders with zero discrepancies",
-        "Coordinated a 6-member staff workflow"
-      ]
-    },
-    {
-      "role": "Educator & Academic Coordinator",
-      "organization": "Kuttab Al-Barokah",
-      "period": "September 2023–March 2026",
-      "highlights": [
-        "Led a team of 11 educators",
-        "Delivered structured curriculum across multiple disciplines"
-      ]
-    },
-    {
-      "role": "Licensed Financial & Protection Advisor",
-      "organization": "PT FWD Insurance & PT Agrodana",
-      "period": "October 2026–Present",
-      "highlights": [
-        "AAJI & AASI certified practitioner",
-        "Advising on financial protection products"
-      ]
-    }
-  ],
-  "skills": {
-    "Technical & Operational": [
-      "Python · pandas · NumPy",
-      "NLP Preprocessing & Text Analysis",
-      "Microsoft Power Automate",
-      "Microsoft Power Apps",
-      "Generative AI Agents (Foundry)",
-      "Git · VS Code · Google Colab",
-      "ETL Pipeline Engineering",
-      "Process Automation Architecture",
-      "Mathematical Modal Logic",
-      "Differential Calculus & Mechanics",
-      "Clockify · Google Analytics"
-    ],
-    "Education & Academic Honors": [
-      "BSc Quranic Studies & Tafsir — IAIPI (GPA 3.54)",
-      "Associate Degree Arabic Language — Al-Imarat",
-      "AI Engineering Bootcamp (Mentor-Led, 2026–Present)",
-      "Japanese Language Studies — PT Yurinoki Nihongo",
-      "Juara 4–6 Olimpiade Matematika (2016/2017)",
-      "Peringkat ke-20 Olimpiade Astronomi se-Kota Bandung (2019/2020)",
-      "Peringkat 1 Ulangan Matematika se-Angkatan SMA (2018)",
-      "Campus Chess Champion 2025 · IAPI Chess Champion",
-      "Pemain Piano Solo Terbaik SMP & SMA",
-      "Kontestan Debat Agama Islam (2019/2020)"
-    ],
-    "Experience & Leadership": [
-      "Head Admin — Empire of Caveine (40,000+ members, 16 staff)",
-      "Operations Intern — Jamil Industry (50–100 orders/day, zero errors)",
-      "Educator & Academic Coordinator — Kuttab Al-Barokah (11 educators)",
-      "Licensed Financial Advisor — PT FWD Insurance & PT Agrodana",
-      "SOP Authoring & Incident Protocol Design",
-      "Staff Recruitment Pipeline Management",
-      "87.5% task completion rate under governance",
-      "Conflict Resolution & Cross-Team Coordination",
-      "Inventory Reconciliation & Warehouse Operations"
+/**
+ * Centralized Decoupled Content Engine (Single Source of Truth)
+ * Author: Rizky Maulana — Systems Narrative Architect
+ */
+const PORTFOLIO_DATA = {
+  meta: {
+    name: "Rizky Maulana",
+    role: "Systems Narrative Architect",
+    specialty: "Strategic Copywriter & Growth Systems Thinker",
+    statusText: "AVAILABLE FOR STRATEGIC SPRINTS",
+    statusSubtext: "Open for High-Stakes Narrative & Global Enterprise Engagements",
+    location: "Remote · Global Reach (UTC+7)",
+    email: "rizky@gmail.com",
+    headline: "I ENGINEER NARRATIVE ARCHITECTURE FOR SYSTEMS THAT CANNOT AFFORD TO BE MISUNDERSTOOD.",
+    lead: "Copy is the front door of a product: the moment a complex system answers a tangible, urgent tension in an audience's life. In an era of infinite AI noise and commodity fatigue, I synthesize epistemic rigor, sociological depth, and behavioral economics to construct conversion ecosystems that outlast shallow marketing tricks.",
+    stats: [
+      { value: "+$18.4M", label: "Pipeline Value Engineered" },
+      { value: "3.4x", label: "Average Conversion Lift" },
+      { value: "40+", label: "Strategic Deployments" },
+      { value: "100%", label: "Steelmanned Precision" }
     ]
   },
-  "honors": [
+
+  arsenal: [
     {
-      "icon": "♞",
-      "title": "IAPI Chess Champion 2025",
-      "category": "Chess & Strategy"
+      id: "p1",
+      code: "P.01",
+      title: "Epistemic Rigor & Analytical Thinking",
+      tagline: "Testing First Principles Before Writing a Single Line",
+      description: "Asking 'How do we know what we know?' Rather than accepting generic market trends or vanity metrics, I interrogate underlying cognitive biases, deductive validity, and systemic bottlenecks to anchor brand messaging on unassailable truth."
     },
     {
-      "icon": "🪐",
-      "title": "Peringkat ke-20 Olimpiade Astronomi se-Kota Bandung 2019/2020",
-      "category": "Astronomy & Physics"
+      id: "p2",
+      code: "P.02",
+      title: "Sociological & Contextual Decoding",
+      tagline: "Reading the Unspoken Subtext of Market Culture",
+      description: "Rooted in hermeneutic exegesis and sociological analysis. I dissect the latent meanings, cultural codes, and sociological resistance that dictate how target audiences subconsciously interpret messages before making high-stakes decisions."
     },
     {
-      "icon": "🌾",
-      "title": "Juara 4–6 Olimpiade Matematika 2016/2017",
-      "category": "Mathematics"
+      id: "p3",
+      code: "P.03",
+      title: "Steelmanning Dialectics",
+      tagline: "Honoring Buyer Skepticism as the Conversion Bridge",
+      description: "Conventional copy relies on strawman objections and aggressive hype. Steelmanning validates and articulates the buyer's strongest, most rational doubts with total honesty—transforming friction into an authentic, irresistible conversion catalyst."
     },
     {
-      "icon": "🌾",
-      "title": "Peringkat 1 Ulangan Matematika se-Angkatan SMA 2018",
-      "category": "Mathematics"
-    },
-    {
-      "icon": "⚖️",
-      "title": "Kontestan Debat Matematika 2015/2016",
-      "category": "Debate & Logic"
-    },
-    {
-      "icon": "🔬",
-      "title": "Calon Kontestan Olimpiade Sains 2019/2020",
-      "category": "Natural Sciences"
-    },
-    {
-      "icon": "⚖️",
-      "title": "Kontestan Debat Agama Islam 2019/2020",
-      "category": "Theology & Debate"
-    },
-    {
-      "icon": "🎹",
-      "title": "Pemain Piano Solo Terbaik di SMP & SMA",
-      "category": "Classical Repertoire"
+      id: "p4",
+      code: "P.04",
+      title: "Gen-Z & Millennial Behavioral Dynamics",
+      tagline: "Engineering Resonance Across Digital Generations",
+      description: "Bridging behavioral economics and generational theory. I design narrative ecosystems specifically calibrated for Gen-Z and Millennial cognitive rhythms: hypersensitive to performative corporate jargon, demanding radical transparency and moral clarity."
     }
   ],
-  "tools_ecosystem": [
+
+  deepDives: [
     {
-      "category": "Automation & AI",
-      "tools": [
-        {
-          "name": "Microsoft Power Automate",
-          "icon": "⚡",
-          "capability": "Enterprise workflow & API robotic process automation"
+      id: "sexism-internalization",
+      client: "Al Fihri Institute",
+      sector: "Social Discourse & Cognitive Advocacy",
+      timeline: "Dialectical Video Campaign",
+      headline: "Kritik Internalisasi Sexism: Deconstructing Patriarchal Conditioning Through Steelmanning Dialogue",
+      summary: "Transforming a high-friction social taboo into a viral, participatory campus discourse by eliminating moralizing judgment and validating lived psychological defensiveness.",
+      impact: [
+        { label: "Community Discourse", value: "350+ Inquiries" },
+        { label: "Comment Debate Ratio", value: "84% Constructive" },
+        { label: "Advocacy Expansion", value: "Campus Counseling Initiative" }
+      ],
+      formula: "\\text{Cognitive Opening} = \\frac{\\text{Pattern Interrupt} \\times \\text{Steelmanned Vulnerability}}{\\text{Moral Superiority Friction}}",
+      synthesis: {
+        context: "Al Fihri Institute sought to address internalized misogyny—specifically instances where women belittle other women in education, relationships, and professional careers—without alienating the audience through accusatory rhetoric.",
+        diagnosis: "Conventional social advocacy relies on preachiness and moral grandstanding. This triggers instant cognitive defensiveness, causing the target demographic to dismiss the message as virtue signaling.",
+        executionMatrix: [
+          { layer: "Pattern Interrupt Hook", tacticalMove: "Front-loaded narrator hook that arrests scroll velocity in the first 1.8 seconds." },
+          { layer: "Character Embodiment", tacticalMove: "Staged a two-character dialogue dramatizing the 'pick me' archetype objectively, validating her underlying search for social safety." },
+          { layer: "Dialectical Deconstruction", tacticalMove: "Layered sociological research and data to peel back the patriarchal conditioning underneath, guiding viewers to self-recognition." },
+          { layer: "Reflective Inquiry CTA", tacticalMove: "Ended with an open-ended philosophical question instead of a lecture, transforming the comment section into an active forum." }
+        ],
+        beforeAfter: {
+          legacy: {
+            headline: "Mengapa Perempuan Masih Sering Saling Menjatuhkan? Stop Victim Blaming Sekarang!",
+            body: "Sebagai perempuan terdidik, kita harus saling mendukung dan menghentikan kebiasaan toxic merendahkan sesama perempuan di lingkungan kampus dan pergaulan.",
+            critique: "Moralizing, accusatory tone that puts the audience on trial immediately. Causes defensive deflection rather than inward reflection."
+          },
+          overhaul: {
+            headline: "Ketika Validasi Ditemukan Lewat Menjadi 'Beda dari Cewek Lain'—Siapa yang Sebenarnya Menang?",
+            body: "Dialog dua menit yang membongkar mengapa rasa takut tidak diakui kerap membuat kita tanpa sadar merendahkan teman sendiri. Bukan untuk menghakimi, tapi untuk memahami polanya.",
+            breakdown: "Replaces moral attack with psychological empathy. Hooks the subconscious desire for belonging and invites analytical introspection."
+          }
         },
-        {
-          "name": "Python (NumPy / pandas)",
-          "icon": "🐍",
-          "capability": "High-performance scientific computing & data pipelines"
-        },
-        {
-          "name": "Julia",
-          "icon": "🟣",
-          "capability": "High-velocity scientific simulation & numerical algorithms"
-        },
-        {
-          "name": "Microsoft Power Apps",
-          "icon": "📱",
-          "capability": "Custom business solutions & internal utility tooling"
-        },
-        {
-          "name": "Google AI Studio",
-          "icon": "✨",
-          "capability": "Multimodal LLM architecture & prompt agent engineering"
-        },
-        {
-          "name": "VS Code & Linux",
-          "icon": "💻",
-          "capability": "Native Unix scripting, bash CLI & development workflows"
-        }
-      ]
+        retrospective: "Proved that high-stakes sociological topics achieve far higher retention and actionable community change when framed through cognitive steelmanning rather than didactic lecturing."
+      }
     },
     {
-      "category": "Data & Analysis",
-      "tools": [
-        {
-          "name": "Microsoft Power BI",
-          "icon": "📊",
-          "capability": "Interactive business intelligence & executive analytics dashboards"
+      id: "desa-bercerita",
+      client: "Desa Bercerita (Mekarjaya)",
+      sector: "Grassroots Advocacy & Rural Public Policy",
+      timeline: "Community Action Program",
+      headline: "Designing Communication Routing to Bridge Academic Initiatives with Grassroots Agrarian Realities",
+      summary: "Architecting a multi-tiered communication buffer that neutralized cultural friction between 20 external volunteers, regional agricultural agencies, and indigenous farmers.",
+      impact: [
+        { label: "Mobilized Citizens", value: "100+ Farmers" },
+        { label: "Volunteers Coordinated", value: "20 Active" },
+        { label: "Operational Friction", value: "Zero Stalemate" }
+      ],
+      formula: "\\text{Grassroots Resonance} = \\text{Institutional Liaison} + \\left( \\frac{\\text{Abstract Policy}}{\\text{Cultural Translation Buffer}} \\right)",
+      synthesis: {
+        context: "Desa Bercerita deployed a 10-day intensive community empowerment and agricultural advocacy initiative in Mekarjaya, Arjasari. The program required cooperation between university volunteers, the Department of Agriculture, and local agrarian communities.",
+        diagnosis: "The critical failure point in community advocacy is never bureaucracy; it is cultural impedance. Academic volunteers speak an abstract, conceptual language that alienates rural farmers, creating mutual distrust.",
+        executionMatrix: [
+          { layer: "Centralized Institutional Routing", tacticalMove: "Channeled all legal, regulatory, and bureaucratic negotiations strictly through the Founder to insulate field teams." },
+          { layer: "Cultural Translation Buffer", tacticalMove: "Reconfigured the PR team and community mentors as semantic translators, converting policy goals into colloquial agrarian terminology." },
+          { layer: "Narrative Grounding", tacticalMove: "Anchored campaign storytelling in generational farmer oral histories rather than PowerPoint lectures." }
+        ],
+        beforeAfter: {
+          legacy: {
+            headline: "Sosialisasi Program Implementasi Kebijakan Ketahanan Pangan Berkelanjutan 2024",
+            body: "Mengedukasi masyarakat agraris mengenai optimalisasi rantai pasok dan modernisasi tata kelola tanah demi efisiensi makroekonomi desa.",
+            critique: "Heavy academic jargon completely disconnected from the daily survival realities and pride of local farmers."
+          },
+          overhaul: {
+            headline: "Menjaga Tanah Leluhur, Menyambung Rezeki Dapur: Catatan Gotong Royong Mekarjaya",
+            body: "Ruang rembuk terbuka antara petani dan dinas pertanian untuk memastikan pupuk tepat waktu, harga panen adil, dan tanah tetap subur untuk anak cucu.",
+            breakdown: "Grounds abstract macro-initiatives into emotional anchors: ancestral pride, food security, and generational inheritance."
+          }
         },
-        {
-          "name": "Looker Studio",
-          "icon": "📈",
-          "capability": "Multi-source cloud reporting & visual metric telemetry"
-        },
-        {
-          "name": "Google Colab",
-          "icon": "☁️",
-          "capability": "Cloud GPU Jupyter notebooks & ML model execution"
-        },
-        {
-          "name": "FRED (Federal Reserve Data)",
-          "icon": "🏛️",
-          "capability": "Macroeconomic empirical research & monetary data analysis"
-        },
-        {
-          "name": "MetaTrader",
-          "icon": "📉",
-          "capability": "Algorithmic quantitative strategies & technical execution"
-        },
-        {
-          "name": "Clockify",
-          "icon": "⏱️",
-          "capability": "Granular time analytics, operational audit & productivity tracking"
-        }
-      ]
+        retrospective: "Demonstrated that communication architecture is fundamentally an information routing problem. When the right buffer translates between systemic abstraction and human emotion, collective action emerges naturally."
+      }
     },
     {
-      "category": "Math & Bioscience",
-      "tools": [
-        {
-          "name": "SymPy",
-          "icon": "∫",
-          "capability": "Symbolic modal calculus, algebra & mathematical verification"
+      id: "nexus-engine-ai",
+      client: "Nexus Engine (San Francisco)",
+      sector: "Enterprise AI Infrastructure",
+      timeline: "6-Week Positioning Sprint",
+      headline: "Translating Complex Graph Computing into an Irresistible Category King Narrative",
+      summary: "Reframing an incomprehensible distributed database engine into an executive imperative that eliminated $180k/month in redundant cloud compute queries.",
+      impact: [
+        { label: "ACV Expansion", value: "+$42,000" },
+        { label: "Pipeline Velocity", value: "3.2x Faster" },
+        { label: "Demo Conversion", value: "+38.4%" }
+      ],
+      formula: "\\Delta \\text{Enterprise Value} = \\left( \\frac{\\text{Urgent Tension} \\times \\text{Specific Moat}}{\\text{Cognitive Friction}} \\right) \\times \\text{ACV}",
+      synthesis: {
+        context: "Nexus Engine built groundbreaking low-latency graph infrastructure for enterprise data teams, but struggled with generic market perception against established incumbents.",
+        diagnosis: "The existing positioning suffered from the 'Feature Salad' fallacy—bragging about microsecond latency rather than anchoring to the CFO's bleeding budget.",
+        executionMatrix: [
+          { layer: "Executive Positioning", tacticalMove: "Repositioned from 'speed tool' to 'cost elimination infrastructure' for Fortune 500 data leaders." },
+          { layer: "Landing Page Architecture", tacticalMove: "Constructed a progressive disclosure funnel separating CTO technical proofs from VP-level ROI math." },
+          { layer: "Objection Preemption", tacticalMove: "Directly addressed migration anxiety with a guaranteed 14-minute zero-downtime integration proof." }
+        ],
+        beforeAfter: {
+          legacy: {
+            headline: "The Next-Generation Platform for All Your Enterprise Data Needs",
+            body: "We empower enterprise teams to leverage synergy across multi-cloud environments seamlessly with AI-driven analytics and ultra-scalable graph computing.",
+            critique: "Zero quantified value, bloated corporate buzzwords, excessive cognitive friction for technical buyers."
+          },
+          overhaul: {
+            headline: "Eliminate $180k in Unused Data Warehouse Queries Every Single Month.",
+            body: "One continuous indexing engine that intercepts duplicate pipelines before they execute. Installed in 14 minutes with zero database migration.",
+            breakdown: "Immediate quantified financial anchor, urgent operational pain point, and friction-free implementation guarantee."
+          }
         },
-        {
-          "name": "GeoGebra",
-          "icon": "📐",
-          "capability": "Dynamic geometric constructions & coordinate space mapping"
-        },
-        {
-          "name": "Desmos Graphing",
-          "icon": "📈",
-          "capability": "Advanced parametric plotting & curve visualization"
-        },
-        {
-          "name": "NCBI BLAST",
-          "icon": "🧬",
-          "capability": "Genomic alignment & nucleotide bio-sequence comparisons"
-        },
-        {
-          "name": "iNaturalist",
-          "icon": "🌿",
-          "capability": "Field taxonomy observation, plant metadata & species mapping"
-        },
-        {
-          "name": "Global Biodiversity (GBIF)",
-          "icon": "🌍",
-          "capability": "Spatial biogeography datasets & biodiversity distribution"
-        }
-      ]
-    },
-    {
-      "category": "Music, Media & Knowledge",
-      "tools": [
-        {
-          "name": "MuseScore Studio",
-          "icon": "🎼",
-          "capability": "Orchestral score engraving, polyphony & classical transcription"
-        },
-        {
-          "name": "IMSLP",
-          "icon": "📚",
-          "capability": "Urtext musicological canon research & historical manuscripts"
-        },
-        {
-          "name": "Krita",
-          "icon": "🎨",
-          "capability": "Digital canvas illustration, tonal shading & botanical realism"
-        },
-        {
-          "name": "DaVinci Resolve",
-          "icon": "🎬",
-          "capability": "Color grading, performance mastering & audio-visual production"
-        },
-        {
-          "name": "Obsidian",
-          "icon": "💎",
-          "capability": "Graph-linked zettelkasten synthesis & research repository"
-        },
-        {
-          "name": "Notion",
-          "icon": "📓",
-          "capability": "Systematic project taxonomies, database design & life OS"
-        }
-      ]
+        retrospective: "When selling complex deep-tech products, specificity is the only moat that cuts through enterprise skepticism."
+      }
     }
   ],
-  "intellectual_pillars": [
+
+  horizons: [
     {
-      "pillar": "Pillar I: Formal Sciences & The Cosmos",
-      "icon": "🌌",
-      "fields": "Formal Mathematics & Modal Logic, Theoretical Physics & Astrophysics, Analytical Chemistry",
-      "tagline": "From differential gravitational dynamics to Gödelian formal proofs."
+      id: "essay-synthesis-premium",
+      tag: "THEORY & PRACTICE",
+      readTime: "6 Min Read",
+      title: "The Synthesis Premium: Why Epistemology & Lateral Thinking Gain Value in the Age of AI",
+      abstract: "Generative AI commoditizes statistical word combinations, but cannot generate meaning without human epistemic grounding. True copywriting value has migrated from sentence generation to cross-domain synthesis, philosophical precision, and psychological decoding.",
+      formula: "\\text{Strategic Value} = \\lim_{\\text{AI Noise} \\to \\infty} \\left( \\text{Epistemic Depth} \\times \\text{Lateral Synthesis} \\right)",
+      fullText: "The democratization of LLMs has flooded the web with syntactically flawless, emotionally vacuous text. When anyone can generate twenty variations of a Facebook ad in three seconds, the market value of word assembly plummets to zero. What remains uncopyable? The ability to diagnose the unspoken sociological undercurrents of an audience. The discipline to rigorously test premises using formal epistemology. The lateral synthesis that borrows concepts from Qur'anic hermeneutics, behavioral game theory, and distributed systems to construct a narrative moat that competitors cannot imitate."
     },
     {
-      "pillar": "Pillar II: Biological Inquiry & Fine Craft",
-      "icon": "🌿",
-      "fields": "Systematic Botanical Science & Flora Neurobiology, Artisan Realism & Canvas Painting",
-      "tagline": "Empirical observation of natural structures and fine graphite realism."
+      id: "essay-commodity-fatigue",
+      tag: "MARKET DYNAMICS",
+      readTime: "5 Min Read",
+      title: "Commodity Fatigue: Overcoming Shallow Brand Relationships Through Meaning Architecture",
+      abstract: "Audiences have developed chronic immune resistance to transactional marketing funnels and superficial persuasion hacks. The future of brand defensibility belongs to systems that establish enduring emotional and intellectual resonance.",
+      formula: "\\text{Brand Defensibility} = \\int_{0}^{t} \\left( \\frac{\\text{Shared Meaning}}{\\text{Transactional Friction}} \\right) dt",
+      fullText: "The modern consumer suffers from profound relationship exhaustion. When every brand sounds like an identical parody of hyper-optimized conversion copy, the consumer defaults to price commoditization. Building a narrative architecture requires recognizing that copy is not a tool to trap customers into a transaction—it is the lens through which a company proves it understands the human complexity of their problem better than anyone else."
     },
     {
-      "pillar": "Pillar III: Sacred Hermeneutics & The Human Spirit",
-      "icon": "📜",
-      "fields": "Qur'an & Tafsir Hermeneutics, Islamic Theology (Kalam), Comparative Linguistics",
-      "tagline": "Classical Arabic morphology, ontological metaphysics, and polyglot semiotics."
-    },
-    {
-      "pillar": "Pillar IV: Literature, Music & Agentic Systems",
-      "icon": "🎹",
-      "fields": "Classical Piano Virtuosity, Speculative Botanical Fiction & Travel Memoirs, AI & Agentic Architecture",
-      "tagline": "Romantic pianism, high-concept florilegium literature, and autonomous engineering."
-    }
-  ],
-  "strategic_mastery": [
-    {
-      "id": "chess",
-      "icon": "♟️",
-      "title": "Chess — Competitive Strategy",
-      "badge": "Campus & IAPI Champion",
-      "description": "Deep positional play, dynamic tactical foresight, and sharp opening theory.",
-      "repertoire": "Caro-Kann Defense · Queen's Gambit · Sicilian Najdorf Variation"
-    },
-    {
-      "id": "geoguessr",
-      "icon": "🌍",
-      "title": "GeoGuessr — Regional Topography",
-      "badge": "European Meta Specialist",
-      "description": "High-accuracy regional deduction via architectural nuances, flora geography, utility infrastructure, and linguistic visual cues.",
-      "repertoire": "European Meta · Regional Topography · High-Accuracy Location Inference"
-    },
-    {
-      "id": "rhythm",
-      "icon": "⚡",
-      "title": "Rhythm Games — High-BPM Kinetic Reflexes",
-      "badge": "High-BPM Kinetic Reflexes",
-      "description": "Million Master in Cytus; elite multi-finger coordination across VOEZ, Deemo, Dynamix, BanG Dream!, and osu!",
-      "repertoire": "Multi-finger kinetic speed directly powering virtuoso piano mechanics & rapid pattern recognition"
+      id: "essay-cognitive-interface",
+      tag: "SYSTEMS DYNAMICS",
+      readTime: "7 Min Read",
+      title: "Copy as Cognitive Interface: Applying System Dynamics to Conversion Architecture",
+      abstract: "Viewing copy not as static prose, but as an interactive feedback loop between a product's technical architecture and a human user's mental model.",
+      formula: "\\text{Conversion Velocity} = \\frac{\\text{Information Throughput}}{\\text{Cognitive Load} + \\text{Risk Perception}}",
+      fullText: "In software engineering, latency kills user experience. In strategic copy, narrative latency kills conversion. Every superfluous adjective, every vague enterprise claim, and every un-steelmanned doubt acts as cognitive friction that depletes user attention. By treating every sentence as an instruction set in the user's cognitive compiler, we can engineer messaging ecosystems with mathematically superior conversion throughput."
     }
   ]
 };
 
-window.WORKS_DATA = [
-  {
-    "id": "polymath-portfolio-architecture",
-    "title": "Polymath Portfolio Architecture & Agentic Engineering",
-    "type": "code",
-    "category": "Web & Software Development",
-    "status": "live",
-    "role": "Lead Architect, Designer & AI Prompt Engineer",
-    "year": 2026,
-    "description": "Conceived, designed, and architected by Elektra Eliviana leveraging agentic AI pair programming (Google Antigravity & Gemini). Features responsive JSON data binding, bespoke Spencerian SVG calligraphy, dynamic audio visualizers, and automated CI/CD deployment via GitHub and Vercel.",
-    "tags": [
-      "Agentic AI",
-      "Antigravity",
-      "JavaScript",
-      "Custom CSS",
-      "Vercel CI/CD"
-    ],
-    "links": {
-      "live": "https://elektra-portfolio-nine.vercel.app",
-      "github": "https://github.com/elektraeliviana/elektra-portfolio"
-    },
-    "featured": true
-  },
-  {
-    "id": "celestial-orbit-dynamics",
-    "type": "code",
-    "title": "Celestial Orbit Dynamics & N-Body Simulator",
-    "year": 2026,
-    "status": "roadmap",
-    "repo": "n-body-orbital-sim",
-    "description": "A numerical simulation of gravitational N-body interactions using real astrophysical constants, visualising orbital paths, Lagrange points, and chaotic divergence in multi-body systems.",
-    "tags": [
-      "Python",
-      "NumPy",
-      "Physics Simulation",
-      "Astrophysics"
-    ]
-  },
-  {
-    "id": "neural-net-from-scratch",
-    "type": "code",
-    "title": "Neural Network & Linear Regression from Raw NumPy",
-    "year": 2026,
-    "status": "roadmap",
-    "repo": "neural-net-from-scratch",
-    "description": "Full implementation of forward propagation, backpropagation, and gradient descent built entirely from first principles using only NumPy — no ML frameworks.",
-    "tags": [
-      "Python",
-      "NumPy",
-      "Machine Learning",
-      "First Principles"
-    ]
-  },
-  {
-    "id": "ai-rag-novel-analyzer",
-    "type": "code",
-    "title": "Exoplanet Light-Curve Classifier / Local RAG Assistant",
-    "year": 2026,
-    "status": "roadmap",
-    "repo": "ai-rag-novel-analyzer",
-    "description": "A dual-purpose AI system: classifies exoplanet transit signatures from photometric light-curve data and powers a local retrieval-augmented generation assistant for literary text analysis.",
-    "tags": [
-      "Python",
-      "NLP",
-      "Astrophysics",
-      "AI"
-    ]
-  },
-  {
-    "id": "automated-data-cleaner",
-    "type": "code",
-    "title": "Automated Data Cleaner & Ingestion Pipeline",
-    "year": 2026,
-    "status": "roadmap",
-    "description": "A robust ETL pipeline that automates detection, cleaning, and structured ingestion of messy tabular datasets — handling nulls, type coercion, deduplication, and schema enforcement.",
-    "tags": [
-      "Python",
-      "pandas",
-      "ETL",
-      "Data Engineering"
-    ]
-  },
-  {
-    "id": "japan-cs-scholarship-journey",
-    "type": "code",
-    "title": "Japan CS Scholarship Journey Portal",
-    "year": 2026,
-    "status": "roadmap",
-    "repo": "japan-cs-scholarship-journey",
-    "description": "A living documentation portal tracking the full journey toward a Japanese Computer Science university scholarship — EJU preparation, language study milestones, application materials, and research logs.",
-    "tags": [
-      "Documentation",
-      "EJU",
-      "Computer Science"
-    ]
-  },
-  {
-    "id": "personal-analytics-engine",
-    "type": "code",
-    "title": "Personal Analytics & Journaling Engine",
-    "year": 2025,
-    "status": "live",
-    "description": "550-line CLI productivity engine with CRUD ops, persistent JSON storage, streak tracking, ASCII visualization, keyword search, and report exports.",
-    "tags": [
-      "Python",
-      "CLI",
-      "NLP",
-      "Data"
-    ]
-  },
-  {
-    "id": "godels-ontological-proof-allah",
-    "type": "research",
-    "title": "Gödel's Ontological Proof to Define the Existence of Allah",
-    "year": 2026,
-    "status": "ongoing",
-    "field": "Mathematical Modal Logic & Islamic Metaphysics",
-    "description": "Landmark treatise applying Gödel's formal modal logic S5 axioms to classical Kalam cosmological arguments and Islamic theological metaphysics — constructing a rigorous formal bridge between analytic philosophy of religion and traditional Islamic scholasticism."
-  },
-  {
-    "id": "politics-of-hierarchy-progenic-prophets",
-    "type": "research",
-    "title": "Politics of Hierarchy: Progenic Prophets Family",
-    "year": 2025,
-    "status": "accepted thesis",
-    "field": "Islamic Studies & Political Theology",
-    "pdf": "assets/papers/Luthfi Fauzan Prophetic Political Regeneration and Family Lineage Hierarchy in the Qur'an.pdf",
-    "description": "An accepted academic thesis examining hierarchical structures and political dynamics within prophetic lineages as recorded in classical Islamic sources."
-  },
-  {
-    "id": "circulation-of-the-sun-hermeneutics",
-    "type": "research",
-    "title": "Circulation of the Sun: Comparative Hermeneutics of Tafsir Al-Madinah Al-Munawwarah and Al-Muyassar",
-    "year": 2025,
-    "status": "complete",
-    "field": "Astronomy & Quranic Exegesis",
-    "description": "A comparative hermeneutical study of solar motion (yasjud / tajri) across two authoritative Quranic commentaries, situating classical exegesis in dialogue with modern astrophysical understanding."
-  },
-  {
-    "id": "mozart-requiem-lacrimosa-semiotics",
-    "type": "research",
-    "title": "KV. 626 W.A. Mozart — Requiem III (Lacrimosa): Liturgical Semiotics and Contemporary Cultural Media",
-    "year": 2025,
-    "status": "complete",
-    "field": "Musicology & Semiotics",
-    "description": "A semiotic analysis of Mozart's Lacrimosa tracing how its liturgical symbols migrate and mutate across contemporary film scores, advertising, and popular media."
-  },
-  {
-    "id": "travel-writing-living-quran",
-    "type": "research",
-    "title": "Travel Writing as a Method of Living Qur'an",
-    "year": 2025,
-    "status": "complete",
-    "field": "Phenomenology & Islamic Studies",
-    "description": "A phenomenological inquiry into rihla (Islamic travel writing) as lived practice of Quranic values — examining how movement, encounter, and witness function as embodied hermeneutics."
-  },
-  {
-    "id": "western-classical-dangdut-ethnomusicology",
-    "type": "research",
-    "title": "The Structural Intensity of Western Classical Repertoire and Its Parallels in Indonesian Dangdut",
-    "year": 2026,
-    "status": "ongoing",
-    "field": "Comparative Ethnomusicology",
-    "description": "A comparative musicological study identifying structural, harmonic, and affective parallels between the Western classical canon and Indonesian dangdut — arguing for a shared grammar of emotional intensity across cultural traditions."
-  },
-  {
-    "id": "newton-to-backpropagation-calculus",
-    "type": "research",
-    "title": "From Newton to Backpropagation: How Gravitational Fields and Gradient Descent Share the Same Calculus Core",
-    "year": 2026,
-    "status": "ongoing",
-    "field": "Mathematics & Machine Learning",
-    "description": "A mathematical essay demonstrating that Newton's laws of gravitational motion and the chain-rule-based gradient descent algorithm share identical differential calculus foundations — illuminating deep structural unity across physics and machine learning."
-  },
-  {
-    "id": "geometry-high-dimensional-word-embeddings",
-    "type": "research",
-    "title": "The Geometry of High-Dimensional Word Embeddings",
-    "year": 2026,
-    "status": "ongoing",
-    "field": "Mathematics & NLP",
-    "description": "An exploration of the geometric properties of word embedding spaces — covering cosine similarity, vector arithmetic, manifold structure, and the mathematical underpinnings of semantic relationships in high-dimensional space."
-  },
-  {
-    "id": "eju-mathematics-formal-derivations",
-    "type": "research",
-    "title": "Formal Mathematical Derivations of EJU Mathematics I & II",
-    "year": 2026,
-    "status": "complete",
-    "field": "Mathematics",
-    "description": "Complete formal derivations of the core EJU Mathematics I & II syllabus — covering proofs, theorems, and worked derivations from first principles for Japan's university examination for international students."
-  },
-  {
-    "id": "the-hundred-petals",
-    "type": "novel",
-    "title": "The Hundred Petals: The Florilegium of War Against the Underworld Entity",
-    "year": 2025,
-    "status": "ongoing",
-    "genre": "Speculative Botanical Fantasy · Mystery · Adventure",
-    "synopsis": "Chemical reactions from rare precious gemstones trigger neurotransmitter responses in ancient underground flora, causing hostile plant entities to mobilize. Only the original primordial stem — held by the destined keeper — can counter the toxic underworld plants. The protagonist must journey to collect 100 mystical flowers to unlock the full power of the counter-stem before the underworld entity achieves dominion."
-  },
-  {
-    "id": "the-hermit-collection",
-    "type": "writing",
-    "title": "The Hermit Collection",
-    "year": 2025,
-    "status": "2 polished",
-    "genre": "Philosophical Short Fiction",
-    "description": "A five-part short story cycle exploring themes of isolation, consciousness, and the nature of knowledge. Two stories are available to read."
-  },
-  {
-    "id": "the-ciwidey-journey",
-    "type": "writing",
-    "title": "The Ciwidey Journey",
-    "year": 2025,
-    "status": "complete",
-    "genre": "Travel Memoir",
-    "description": "Atmospheric personal travel essay through the highlands and volcanic landscapes of Ciwidey, West Java — written as lived phenomenological experience."
-  },
-  {
-    "id": "art-realistic-eye",
-    "type": "art",
-    "title": "Realistic Eye",
-    "year": 2024,
-    "status": "showcase",
-    "medium": "Graphite Pencil",
-    "image": "assets/art/Elektra's Art Realistic Eye.jpg"
-  },
-  {
-    "id": "art-flandres-sprite",
-    "type": "art",
-    "title": "Flandre's Sprite",
-    "year": 2024,
-    "status": "showcase",
-    "medium": "Digital Art · Krita",
-    "image": "assets/art/Elektra's Art Flandre's Sprite.jpg"
-  },
-  {
-    "id": "art-detailed-mountain-canvas",
-    "type": "art",
-    "title": "Detailed Mountain on Canvas",
-    "year": 2024,
-    "status": "showcase",
-    "medium": "Acrylic on Canvas",
-    "image": "assets/art/Elektra's Art Realistic Mountain.jpg"
-  },
-  {
-    "id": "art-detailed-tree-canvas",
-    "type": "art",
-    "title": "Detailed Tree on Canvas",
-    "year": 2024,
-    "status": "showcase",
-    "medium": "Acrylic on Canvas · Botanical",
-    "image": "assets/art/Elektra's Art Tree.jpg"
-  },
-  {
-    "id": "art-tea-still-life",
-    "type": "art",
-    "title": "Realistic Tea Still Life",
-    "year": 2024,
-    "status": "showcase",
-    "medium": "Graphite Pencil",
-    "image": "assets/art/Elektra's Art Realistic Tea.jpg"
-  },
-  {
-    "id": "art-pewdiepie-portrait",
-    "type": "art",
-    "title": "Pewdiepie — Realistic Portrait",
-    "year": 2023,
-    "status": "exhibition-donated",
-    "medium": "Graphite Pencil"
-  },
-  {
-    "id": "art-cats-face-realism",
-    "type": "art",
-    "title": "Cat's Face — Animal Realism",
-    "year": 2023,
-    "status": "exhibition-donated",
-    "medium": "Graphite Pencil"
-  },
-  {
-    "id": "art-3d-squid-umbrella",
-    "type": "art",
-    "title": "3D Squid Umbrella Design",
-    "year": 2023,
-    "status": "exhibition-donated",
-    "medium": "Mixed Media · 3D Concept"
-  },
-  {
-    "id": "art-town-landscape",
-    "type": "art",
-    "title": "Town Landscape",
-    "year": 2023,
-    "status": "exhibition-donated",
-    "medium": "Pencil"
-  },
-  {
-    "id": "art-nature-dual-eyes",
-    "type": "art",
-    "title": "Nature with Dual Eyes",
-    "year": 2023,
-    "status": "exhibition-donated",
-    "medium": "Canvas · Surrealist Concept"
-  },
-  {
-    "id": "music-chopin-ballade-1",
-    "type": "music",
-    "title": "Ballade No. 1 in G Minor, Op. 23",
-    "year": 2025,
-    "composer": "Frédéric Chopin",
-    "era": "Romantic",
-    "difficulty": "Virtuoso",
-    "description": "One of Chopin's most dramatic and technically demanding works. Features stormy octave passages and deeply lyrical cantabile sections.",
-    "audio": "assets/audio/ballade-1.mp3"
-  },
-  {
-    "id": "music-beethoven-moonlight-3rd",
-    "type": "music",
-    "title": "Piano Sonata No. 14 \"Moonlight\" — 3rd Movement, Presto Agitato",
-    "year": 2025,
-    "composer": "Ludwig van Beethoven",
-    "era": "Classical-Romantic",
-    "difficulty": "Virtuoso",
-    "description": "Beethoven's most turbulent sonata movement — a relentless storm of triplet arpeggios demanding both technical precision and dramatic intensity.",
-    "audio": "assets/audio/moonlight-3rd.mp3"
-  },
-  {
-    "id": "music-liszt-hungarian-rhapsody-2",
-    "type": "music",
-    "title": "Hungarian Rhapsody No. 2",
-    "year": 2026,
-    "composer": "Franz Liszt",
-    "era": "Romantic",
-    "difficulty": "Virtuoso",
-    "description": "30% mastery including the famous Friska section — one of the most iconic and technically ferocious showpieces in the piano repertoire.",
-    "audio": "assets/audio/hungarian-rhapsody-2.mp3"
-  },
-  {
-    "id": "music-chopin-nocturne-op9-no1",
-    "type": "music",
-    "title": "Nocturne in B-flat Minor, Op. 9, No. 1",
-    "year": 2024,
-    "composer": "Frédéric Chopin",
-    "era": "Romantic",
-    "difficulty": "Advanced",
-    "description": "A deeply introspective nocturne marked by its long-breathed melodic lines, rich left-hand arpeggios, and characteristic Chopin ornamentation.",
-    "audio": "assets/audio/nocturne-op9-no1.mp3"
-  },
-  {
-    "id": "performance-piano-drawing-combined",
-    "type": "performance",
-    "title": "Piano & Drawing Combined Performance",
-    "year": 2025,
-    "platform": "YouTube",
-    "description": "A synergistic video performance combining live classical piano playing with simultaneous real-time drawing — an exploration of multi-disciplinary artistic expression.",
-    "tags": [
-      "Piano",
-      "Drawing",
-      "Performance Art",
-      "YouTube"
-    ]
-  },
-  {
-    "id": "chess-campus-champion-2025",
-    "type": "chess",
-    "title": "Campus Chess Champion 2025",
-    "year": 2025,
-    "status": "champion",
-    "tournamentTitle": "Juara 1 Catur Kampus 2025",
-    "description": "Campus-wide chess tournament champion. Preferred openings include Caro-Kann Defense, King's Indian Defense, Queen's Gambit, London System, Trompowsky Attack, and Vienna Game.",
-    "openings": [
-      "Caro-Kann Defense",
-      "King's Indian Defense",
-      "Queen's Gambit",
-      "London System",
-      "Trompowsky Attack",
-      "Vienna Game"
-    ]
-  },
-  {
-    "id": "path-of-life-and-hope-under-magnolias",
-    "title": "The Path of Life and Hope Under the Magnolia's",
-    "type": "writing",
-    "category": "Speculative Short Fiction / Botanical Literature",
-    "status": "Published",
-    "role": "Author",
-    "year": 2026,
-    "description": "A philosophical short fiction exploring memory, nature, and redemption beneath blooming magnolias.",
-    "tags": [
-      "Speculative Fiction",
-      "Botanical Literature",
-      "Wattpad",
-      "Lyrical Prose",
-      "Existentialism"
-    ],
-    "links": {
-      "wattpad": "https://www.wattpad.com/story/414636110-the-path-of-life-and-hope-under-the-magnolia%27s"
-    },
-    "featured": true
-  }
-];
+// Export for module support if loaded in bundler; stays global in vanilla browser
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = PORTFOLIO_DATA;
+}
