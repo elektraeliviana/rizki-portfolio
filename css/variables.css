@@ -1,10 +1,10 @@
 :root {
-  /* Surface & Background */
+  /* Surfaces & Canvas */
   --bg-primary: #08080A;
   --bg-secondary: #111115;
-  --bg-tertiary: #18181D;
-  --bg-elevated: #202026;
-  --bg-glass: rgba(17, 17, 21, 0.75);
+  --bg-tertiary: #16171B;
+  --bg-elevated: #1F2026;
+  --bg-glass: rgba(17, 17, 21, 0.82);
 
   /* Typography Colors */
   --text-primary: #F4F4F6;
@@ -12,22 +12,26 @@
   --text-tertiary: #52525A;
   --text-inverse: #08080A;
 
-  /* Accent Brand - Electric Acid Lime */
+  /* Accent Brand - High-Voltage Acid Lime */
   --accent: #CCFF00;
   --accent-hover: #E2FF4D;
-  --accent-glow: rgba(204, 255, 0, 0.22);
+  --accent-glow: rgba(204, 255, 0, 0.25);
   --accent-subtle: rgba(204, 255, 0, 0.08);
 
+  /* Editorial Link Accent Colors */
+  --link-title: #5898FF;
+  --link-title-hover: #CCFF00;
+
   /* Status Colors */
-  --status-danger: #FF4D4D;
-  --status-danger-bg: rgba(255, 77, 77, 0.08);
-  --status-success: #CCFF00;
-  --status-success-bg: rgba(204, 255, 0, 0.08);
+  --status-legacy: #FF4D4D;
+  --status-legacy-bg: rgba(255, 77, 77, 0.08);
+  --status-overhaul: #CCFF00;
+  --status-overhaul-bg: rgba(204, 255, 0, 0.08);
 
   /* Borders & Grid Rules */
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-medium: rgba(255, 255, 255, 0.16);
-  --border-focus: rgba(204, 255, 0, 0.45);
+  --border-focus: rgba(204, 255, 0, 0.4);
 
   /* Typography Stacks */
   --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -42,7 +46,7 @@
   --radius-lg: 12px;
   --radius-full: 9999px;
 
-  /* Transitions */
+  /* Transitions & Animation Curves */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);

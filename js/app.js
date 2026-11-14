@@ -1,14 +1,24 @@
 /**
- * Main Controller: Mounts data, triggers animations, initializes interactions
+ * Main Controller: Mounts data, triggers animations, initializes interactions & link previews
  */
 document.addEventListener('DOMContentLoaded', () => {
   renderHeroData();
-  renderArsenal();
+  renderPillars();
   renderDeepDives();
   renderHorizons();
   renderPhilosophy();
   initMetricCounterAnimation();
   initSmoothScroll();
+
+  // Initialize the Automated Rich Link Embed Engine across all essays & content
+  if (typeof LinkEmbedEngine !== 'undefined') {
+    LinkEmbedEngine.init();
+  }
+
+  // Refresh custom cursor magnetic triggers
+  if (window.refreshCursorTriggers) {
+    window.refreshCursorTriggers();
+  }
 });
 
 function renderHeroData() {
@@ -18,11 +28,11 @@ function renderHeroData() {
   const leadEl = document.getElementById('heroLead');
   const tickerEl = document.getElementById('metricTicker');
 
-  if (statusEl) statusEl.textContent = meta.statusSubtext;
+  if (statusEl) statusEl.textContent = meta.status;
   if (headlineEl) {
-    headlineEl.innerHTML = `I ENGINEER <em>NARRATIVE ARCHITECTURE</em> FOR SYSTEMS THAT CANNOT AFFORD TO BE MISUNDERSTOOD.`;
+    headlineEl.innerHTML = `BRIDGING <em>EPISTEMIC RIGOR</em>, SOCIOLOGICAL DEPTH, AND BEHAVIORAL SYSTEMS TO ARCHITECT UNASSAILABLE BRAND NARRATIVES.`;
   }
-  if (leadEl) leadEl.textContent = meta.lead;
+  if (leadEl) leadEl.textContent = meta.heroSubtext;
 
   if (tickerEl && meta.stats) {
     tickerEl.innerHTML = meta.stats.map(s => `
@@ -34,11 +44,11 @@ function renderHeroData() {
   }
 }
 
-function renderArsenal() {
+function renderPillars() {
   const container = document.getElementById('arsenalGrid');
-  if (!container || !PORTFOLIO_DATA.arsenal) return;
+  if (!container || !PORTFOLIO_DATA.pillars) return;
 
-  container.innerHTML = PORTFOLIO_DATA.arsenal.map(p => `
+  container.innerHTML = PORTFOLIO_DATA.pillars.map(p => `
     <article class="arsenal-card">
       <div class="arsenal-idx mono">${p.code}</div>
       <div>
@@ -74,7 +84,7 @@ function renderDeepDives() {
         </div>
 
         <button class="btn btn-sm">
-          Inspect Architecture
+          Inspect Deep Synthesis
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 0.3rem;">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
@@ -88,7 +98,7 @@ function renderDeepDives() {
           ${item.formula}
         </div>
         <div style="font-size: 0.8rem; color: var(--text-secondary); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-          Click to inspect the full 5-stage synthesis matrix, hypothesis deconstruction, and interactive Before/After copy breakdown.
+          Click to inspect the complete 5-stage synthesis matrix, hypothesis deconstruction, and interactive Before/After copy breakdown.
         </div>
       </div>
     </article>
@@ -127,11 +137,15 @@ function renderHorizons() {
 }
 
 function renderPhilosophy() {
-  const email = PORTFOLIO_DATA.meta.email || "rizky@gmail.com";
+  const meta = PORTFOLIO_DATA.meta;
+  const bioEl = document.getElementById('philosophyBioText');
+  if (bioEl && meta.bio) {
+    bioEl.textContent = meta.bio;
+  }
   const emailLink = document.getElementById('philosophyEmailLink');
   if (emailLink) {
-    emailLink.href = `mailto:${email}?subject=Strategic%20Narrative%20Inquiry`;
-    emailLink.textContent = email;
+    emailLink.href = `mailto:${meta.email}?subject=Strategic%20Narrative%20Inquiry`;
+    emailLink.textContent = meta.email;
   }
 }
 
@@ -169,40 +183,3 @@ function initSmoothScroll() {
     });
   });
 }
-
-// Generate Open Graph image dynamically on canvas if needed
-window.generateOgPreview = function() {
-  const canvas = document.createElement('canvas');
-  canvas.width = 1200;
-  canvas.height = 630;
-  const ctx = canvas.getContext('2d');
-
-  // Background
-  ctx.fillStyle = '#08080A';
-  ctx.fillRect(0, 0, 1200, 630);
-
-  // Border & Grid
-  ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
-  ctx.lineWidth = 1;
-  ctx.strokeRect(40, 40, 1120, 550);
-
-  // Accent Line
-  ctx.fillStyle = '#CCFF00';
-  ctx.fillRect(80, 80, 8, 80);
-
-  // Typography
-  ctx.fillStyle = '#F4F4F6';
-  ctx.font = 'bold 54px "Space Grotesk", sans-serif';
-  ctx.fillText('RIZKY MAULANA', 110, 125);
-
-  ctx.fillStyle = '#CCFF00';
-  ctx.font = 'bold 22px "JetBrains Mono", monospace';
-  ctx.fillText('SYSTEMS NARRATIVE ARCHITECT · RESEARCH & STRATEGY', 110, 155);
-
-  ctx.fillStyle = '#8E8E98';
-  ctx.font = '32px "Inter", sans-serif';
-  ctx.fillText('Engineering high-velocity narrative architecture &', 110, 280);
-  ctx.fillText('conversion economics for enterprise systems.', 110, 330);
-
-  return canvas.toDataURL('image/png');
-};

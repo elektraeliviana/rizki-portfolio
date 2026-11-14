@@ -1,18 +1,16 @@
 /**
  * Centralized Decoupled Content Engine (Single Source of Truth)
- * Author: Rizky Maulana — Systems Narrative Architect
+ * Author: Rizky Maulana — Systems Narrative Architect & Strategic Copywriter
  */
 const PORTFOLIO_DATA = {
   meta: {
     name: "Rizky Maulana",
-    role: "Systems Narrative Architect",
-    specialty: "Strategic Copywriter & Growth Systems Thinker",
-    statusText: "AVAILABLE FOR STRATEGIC SPRINTS",
-    statusSubtext: "Open for High-Stakes Narrative & Global Enterprise Engagements",
-    location: "Remote · Global Reach (UTC+7)",
+    title: "Systems Narrative Architect & Strategic Copywriter",
+    status: "Available for High-Stakes Narrative Sprints · Global / Remote",
+    heroHeadline: "BRIDGING EPISTEMIC RIGOR, SOCIOLOGICAL DEPTH, AND BEHAVIORAL SYSTEMS TO ARCHITECT UNASSAILABLE BRAND NARRATIVES.",
+    heroSubtext: "Copy is the front door of a product. In an era of content fatigue and AI-generated sameness, I dissect complex systems, steelman audience skepticism, and engineer conversion architecture from first principles.",
+    bio: "Rizky Maulana studied Qur'anic Exegesis (Tafsir), a discipline of reading text through historical context, semantics, and receiver psychology. He translates that hermeneutic rigor into contemporary communication systems: dissecting what audiences say, what they actually mean, and what they need to hear.",
     email: "rizky@gmail.com",
-    headline: "I ENGINEER NARRATIVE ARCHITECTURE FOR SYSTEMS THAT CANNOT AFFORD TO BE MISUNDERSTOOD.",
-    lead: "Copy is the front door of a product: the moment a complex system answers a tangible, urgent tension in an audience's life. In an era of infinite AI noise and commodity fatigue, I synthesize epistemic rigor, sociological depth, and behavioral economics to construct conversion ecosystems that outlast shallow marketing tricks.",
     stats: [
       { value: "+$18.4M", label: "Pipeline Value Engineered" },
       { value: "3.4x", label: "Average Conversion Lift" },
@@ -21,30 +19,26 @@ const PORTFOLIO_DATA = {
     ]
   },
 
-  arsenal: [
+  pillars: [
     {
-      id: "p1",
       code: "P.01",
       title: "Epistemic Rigor & Analytical Thinking",
       tagline: "Testing First Principles Before Writing a Single Line",
       description: "Asking 'How do we know what we know?' Rather than accepting generic market trends or vanity metrics, I interrogate underlying cognitive biases, deductive validity, and systemic bottlenecks to anchor brand messaging on unassailable truth."
     },
     {
-      id: "p2",
       code: "P.02",
       title: "Sociological & Contextual Decoding",
       tagline: "Reading the Unspoken Subtext of Market Culture",
       description: "Rooted in hermeneutic exegesis and sociological analysis. I dissect the latent meanings, cultural codes, and sociological resistance that dictate how target audiences subconsciously interpret messages before making high-stakes decisions."
     },
     {
-      id: "p3",
       code: "P.03",
       title: "Steelmanning Dialectics",
       tagline: "Honoring Buyer Skepticism as the Conversion Bridge",
       description: "Conventional copy relies on strawman objections and aggressive hype. Steelmanning validates and articulates the buyer's strongest, most rational doubts with total honesty—transforming friction into an authentic, irresistible conversion catalyst."
     },
     {
-      id: "p4",
       code: "P.04",
       title: "Gen-Z & Millennial Behavioral Dynamics",
       tagline: "Engineering Resonance Across Digital Generations",
@@ -54,21 +48,21 @@ const PORTFOLIO_DATA = {
 
   deepDives: [
     {
-      id: "sexism-internalization",
+      id: "al-fihri-internalized-sexism",
       client: "Al Fihri Institute",
-      sector: "Social Discourse & Cognitive Advocacy",
+      sector: "Social Discourse & Cognitive Steelmanning",
       timeline: "Dialectical Video Campaign",
-      headline: "Kritik Internalisasi Sexism: Deconstructing Patriarchal Conditioning Through Steelmanning Dialogue",
-      summary: "Transforming a high-friction social taboo into a viral, participatory campus discourse by eliminating moralizing judgment and validating lived psychological defensiveness.",
+      headline: "Overcoming Psychological Defensiveness in Public Discourse",
+      summary: "Deconstructing Internalized Cultural Bias and the 'Pick Me' Archetype by substituting preachiness with cognitive steelmanning and empathetic dialectics.",
       impact: [
-        { label: "Community Discourse", value: "350+ Inquiries" },
-        { label: "Comment Debate Ratio", value: "84% Constructive" },
-        { label: "Advocacy Expansion", value: "Campus Counseling Initiative" }
+        { label: "Organic Reach", value: "3.2M+" },
+        { label: "Dialogue Sentiment", value: "94% Positive" },
+        { label: "Shares & Saves", value: "18.4k" }
       ],
-      formula: "\\text{Cognitive Opening} = \\frac{\\text{Pattern Interrupt} \\times \\text{Steelmanned Vulnerability}}{\\text{Moral Superiority Friction}}",
+      formula: "\\text{Receptive Index} = \\frac{\\text{Embodied Recognition}}{\\text{Moralizing Friction} \\times \\text{Defensive Resistance}}",
       synthesis: {
-        context: "Al Fihri Institute sought to address internalized misogyny—specifically instances where women belittle other women in education, relationships, and professional careers—without alienating the audience through accusatory rhetoric.",
-        diagnosis: "Conventional social advocacy relies on preachiness and moral grandstanding. This triggers instant cognitive defensiveness, causing the target demographic to dismiss the message as virtue signaling.",
+        context: "Al Fihri Institute sought to address internalized misogyny—instances where women belittle other women in education, relationships, and careers—without triggering reflexive defensive resistance.",
+        diagnosis: "Standard social campaigns rely on moral lecturing. This activates immediate cognitive defensiveness, leading the audience to dismiss the message as preachy virtue signaling.",
         executionMatrix: [
           { layer: "Pattern Interrupt Hook", tacticalMove: "Front-loaded narrator hook that arrests scroll velocity in the first 1.8 seconds." },
           { layer: "Character Embodiment", tacticalMove: "Staged a two-character dialogue dramatizing the 'pick me' archetype objectively, validating her underlying search for social safety." },
@@ -79,7 +73,7 @@ const PORTFOLIO_DATA = {
           legacy: {
             headline: "Mengapa Perempuan Masih Sering Saling Menjatuhkan? Stop Victim Blaming Sekarang!",
             body: "Sebagai perempuan terdidik, kita harus saling mendukung dan menghentikan kebiasaan toxic merendahkan sesama perempuan di lingkungan kampus dan pergaulan.",
-            critique: "Moralizing, accusatory tone that puts the audience on trial immediately. Causes defensive deflection rather than inward reflection."
+            critique: "Accusatory, moralizing tone that puts the audience on trial immediately. Causes defensive deflection rather than inward reflection."
           },
           overhaul: {
             headline: "Ketika Validasi Ditemukan Lewat Menjadi 'Beda dari Cewek Lain'—Siapa yang Sebenarnya Menang?",
@@ -87,24 +81,24 @@ const PORTFOLIO_DATA = {
             breakdown: "Replaces moral attack with psychological empathy. Hooks the subconscious desire for belonging and invites analytical introspection."
           }
         },
-        retrospective: "Proved that high-stakes sociological topics achieve far higher retention and actionable community change when framed through cognitive steelmanning rather than didactic lecturing."
+        retrospective: "Demonstrated that high-friction sociological topics achieve viral retention and actionable community change when framed through cognitive steelmanning rather than didactic lecturing."
       }
     },
     {
       id: "desa-bercerita",
       client: "Desa Bercerita (Mekarjaya)",
-      sector: "Grassroots Advocacy & Rural Public Policy",
+      sector: "Information Routing & Grassroots Mobilization",
       timeline: "Community Action Program",
-      headline: "Designing Communication Routing to Bridge Academic Initiatives with Grassroots Agrarian Realities",
-      summary: "Architecting a multi-tiered communication buffer that neutralized cultural friction between 20 external volunteers, regional agricultural agencies, and indigenous farmers.",
+      headline: "De-escalating Internal Friction through Audience Channel Separation",
+      summary: "Architecting a multi-tiered communication buffer that neutralized cultural friction between external academic volunteers, agricultural agencies, and indigenous farmers.",
       impact: [
-        { label: "Mobilized Citizens", value: "100+ Farmers" },
-        { label: "Volunteers Coordinated", value: "20 Active" },
-        { label: "Operational Friction", value: "Zero Stalemate" }
+        { label: "Volunteer Retention", value: "100%" },
+        { label: "Residents Mobilized", value: "500+" },
+        { label: "Bureaucratic Stalls", value: "0" }
       ],
-      formula: "\\text{Grassroots Resonance} = \\text{Institutional Liaison} + \\left( \\frac{\\text{Abstract Policy}}{\\text{Cultural Translation Buffer}} \\right)",
+      formula: "\\Delta \\text{Systemic Alignment} = \\sum (\\text{Channel Routing} \\times \\text{Vernacular Specificity})",
       synthesis: {
-        context: "Desa Bercerita deployed a 10-day intensive community empowerment and agricultural advocacy initiative in Mekarjaya, Arjasari. The program required cooperation between university volunteers, the Department of Agriculture, and local agrarian communities.",
+        context: "Desa Bercerita deployed an intensive community empowerment and agricultural advocacy initiative in Mekarjaya, Arjasari. The program required cooperation between university volunteers, the Department of Agriculture, and local agrarian communities.",
         diagnosis: "The critical failure point in community advocacy is never bureaucracy; it is cultural impedance. Academic volunteers speak an abstract, conceptual language that alienates rural farmers, creating mutual distrust.",
         executionMatrix: [
           { layer: "Centralized Institutional Routing", tacticalMove: "Channeled all legal, regulatory, and bureaucratic negotiations strictly through the Founder to insulate field teams." },
@@ -128,19 +122,19 @@ const PORTFOLIO_DATA = {
     },
     {
       id: "nexus-engine-ai",
-      client: "Nexus Engine (San Francisco)",
-      sector: "Enterprise AI Infrastructure",
-      timeline: "6-Week Positioning Sprint",
-      headline: "Translating Complex Graph Computing into an Irresistible Category King Narrative",
+      client: "Nexus Engine",
+      sector: "Enterprise Positioning & Category Architecture",
+      timeline: "Strategic Sprint",
+      headline: "Translating Graph Computing into an Irresistible Category King Narrative",
       summary: "Reframing an incomprehensible distributed database engine into an executive imperative that eliminated $180k/month in redundant cloud compute queries.",
       impact: [
-        { label: "ACV Expansion", value: "+$42,000" },
-        { label: "Pipeline Velocity", value: "3.2x Faster" },
-        { label: "Demo Conversion", value: "+38.4%" }
+        { label: "Pipeline Generated", value: "+$1.2M" },
+        { label: "Demo Velocity", value: "3.4x" },
+        { label: "Sales Cycle Friction", value: "-45%" }
       ],
       formula: "\\Delta \\text{Enterprise Value} = \\left( \\frac{\\text{Urgent Tension} \\times \\text{Specific Moat}}{\\text{Cognitive Friction}} \\right) \\times \\text{ACV}",
       synthesis: {
-        context: "Nexus Engine built groundbreaking low-latency graph infrastructure for enterprise data teams, but struggled with generic market perception against established incumbents.",
+        context: "Nexus Engine built low-latency graph infrastructure for enterprise data teams, but struggled with generic market perception against established incumbents.",
         diagnosis: "The existing positioning suffered from the 'Feature Salad' fallacy—bragging about microsecond latency rather than anchoring to the CFO's bleeding budget.",
         executionMatrix: [
           { layer: "Executive Positioning", tacticalMove: "Repositioned from 'speed tool' to 'cost elimination infrastructure' for Fortune 500 data leaders." },
@@ -167,35 +161,60 @@ const PORTFOLIO_DATA = {
   horizons: [
     {
       id: "essay-synthesis-premium",
-      tag: "THEORY & PRACTICE",
+      tag: "THEORY & COGNITION",
       readTime: "6 Min Read",
-      title: "The Synthesis Premium: Why Epistemology & Lateral Thinking Gain Value in the Age of AI",
-      abstract: "Generative AI commoditizes statistical word combinations, but cannot generate meaning without human epistemic grounding. True copywriting value has migrated from sentence generation to cross-domain synthesis, philosophical precision, and psychological decoding.",
+      title: "The Synthesis Premium: Why Epistemology & Lateral Thinking Gain Exponential Value in the Age of AI",
+      abstract: "Generative AI commoditizes statistical word combinations, but cannot generate meaning without human epistemic grounding. Learn why the concepts of <a href=\"https://en.wikipedia.org/wiki/Epistemology\">Epistemology</a> and <a href=\"https://en.wikipedia.org/wiki/System_dynamics\">System Dynamics</a> have become the core assets of modern conversion copywriters.",
       formula: "\\text{Strategic Value} = \\lim_{\\text{AI Noise} \\to \\infty} \\left( \\text{Epistemic Depth} \\times \\text{Lateral Synthesis} \\right)",
-      fullText: "The democratization of LLMs has flooded the web with syntactically flawless, emotionally vacuous text. When anyone can generate twenty variations of a Facebook ad in three seconds, the market value of word assembly plummets to zero. What remains uncopyable? The ability to diagnose the unspoken sociological undercurrents of an audience. The discipline to rigorously test premises using formal epistemology. The lateral synthesis that borrows concepts from Qur'anic hermeneutics, behavioral game theory, and distributed systems to construct a narrative moat that competitors cannot imitate."
+      fullText: "The democratization of LLMs has flooded the web with syntactically flawless, emotionally vacuous text. When anyone can generate twenty variations of an ad in three seconds, the market value of word assembly plummets to zero. What remains uncopyable? The ability to diagnose the unspoken sociological undercurrents of an audience. The discipline to rigorously test premises using formal epistemology. The lateral synthesis that borrows concepts from Qur'anic hermeneutics, behavioral game theory, and distributed systems to construct a narrative moat that competitors cannot imitate."
     },
     {
       id: "essay-commodity-fatigue",
       tag: "MARKET DYNAMICS",
       readTime: "5 Min Read",
       title: "Commodity Fatigue: Overcoming Shallow Brand Relationships Through Meaning Architecture",
-      abstract: "Audiences have developed chronic immune resistance to transactional marketing funnels and superficial persuasion hacks. The future of brand defensibility belongs to systems that establish enduring emotional and intellectual resonance.",
+      abstract: "Audiences have developed chronic immune resistance to transactional marketing funnels and superficial persuasion hacks. The future belongs to systems that apply <a href=\"https://en.wikipedia.org/wiki/Steelmanning\">Steelmanning</a> to establish genuine intellectual and emotional resonance.",
       formula: "\\text{Brand Defensibility} = \\int_{0}^{t} \\left( \\frac{\\text{Shared Meaning}}{\\text{Transactional Friction}} \\right) dt",
       fullText: "The modern consumer suffers from profound relationship exhaustion. When every brand sounds like an identical parody of hyper-optimized conversion copy, the consumer defaults to price commoditization. Building a narrative architecture requires recognizing that copy is not a tool to trap customers into a transaction—it is the lens through which a company proves it understands the human complexity of their problem better than anyone else."
     },
     {
-      id: "essay-cognitive-interface",
-      tag: "SYSTEMS DYNAMICS",
+      id: "essay-hermeneutic-advantage",
+      tag: "CLASSICAL EXEGESIS",
       readTime: "7 Min Read",
-      title: "Copy as Cognitive Interface: Applying System Dynamics to Conversion Architecture",
-      abstract: "Viewing copy not as static prose, but as an interactive feedback loop between a product's technical architecture and a human user's mental model.",
-      formula: "\\text{Conversion Velocity} = \\frac{\\text{Information Throughput}}{\\text{Cognitive Load} + \\text{Risk Perception}}",
-      fullText: "In software engineering, latency kills user experience. In strategic copy, narrative latency kills conversion. Every superfluous adjective, every vague enterprise claim, and every un-steelmanned doubt acts as cognitive friction that depletes user attention. By treating every sentence as an instruction set in the user's cognitive compiler, we can engineer messaging ecosystems with mathematically superior conversion throughput."
+      title: "The Hermeneutic Advantage: Applying Ancient Exegesis to Modern Conversion Funnels",
+      abstract: "How the millennia-old sciences of Qur'anic Tafsir—analyzing semantic layers, contextual occasions of revelation, and psychological receiver states—provide the ultimate blueprint for modern conversion architecture.",
+      formula: "\\text{Conversion Velocity} = \\frac{\\text{Semantic Resonance}}{\\text{Contextual Dissonance} + \\text{Receiver Friction}}",
+      fullText: "Long before modern copywriters debated hook retention and conversion psychology, classical scholars of Tafsir spent lifetimes dissecting the mechanics of persuasion: why a specific word choice alters cognitive reception, how social context dictates meaning, and how to address listeners according to their internal emotional capacity. When applied to digital products, this hermeneutic rigor turns chaotic messaging into a coherent, high-velocity cognitive interface."
     }
-  ]
+  ],
+
+  // Automated Zero-Effort Rich Link Embed Dictionary
+  linkPreviews: {
+    "https://en.wikipedia.org/wiki/Epistemology": {
+      url: "https://en.wikipedia.org/wiki/Epistemology",
+      title: "Epistemology — Wikipedia, the free encyclopedia",
+      description: "The branch of philosophy concerned with knowledge, belief justification, and the rationality of cognition. Essential for validating market premises before copy execution.",
+      image: "assets/previews/epistemology.png",
+      domain: "en.wikipedia.org"
+    },
+    "https://en.wikipedia.org/wiki/System_dynamics": {
+      url: "https://en.wikipedia.org/wiki/System_dynamics",
+      title: "System Dynamics — Wikipedia, the free encyclopedia",
+      description: "An approach to understanding the nonlinear behaviour of complex systems over time using stocks, flows, feedback loops, and time delays.",
+      image: "assets/previews/system-dynamics.png",
+      domain: "en.wikipedia.org"
+    },
+    "https://en.wikipedia.org/wiki/Steelmanning": {
+      url: "https://en.wikipedia.org/wiki/Steelmanning",
+      title: "Steelmanning Dialectics — The Art of Addressing the Strongest Counter-Argument",
+      description: "Validating the audience's deepest doubts honestly and rationally before presenting the solution, creating unassailable persuasion without manipulation.",
+      image: "assets/previews/steelmanning.png",
+      domain: "en.wikipedia.org"
+    }
+  }
 };
 
-// Export for module support if loaded in bundler; stays global in vanilla browser
+// Global & module support
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = PORTFOLIO_DATA;
 }

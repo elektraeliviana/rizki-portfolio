@@ -5,29 +5,29 @@ const BriefEngine = (function() {
   let briefOverlay = null;
   let currentStep = 1;
   const state = {
-    objective: "Positioning Overhaul",
+    objective: "High-Stakes Brand Narrative",
     stage: "Growth / Series A-B",
     timeline: "Immediate / Q1 Sprint"
   };
 
   const objectives = [
-    { title: "Positioning Overhaul", desc: "Deconstruct and rebuild category narrative from first principles." },
-    { title: "High-Velocity Landing Page", desc: "Engineered copy flow with progressive disclosure and conversion mechanics." },
-    { title: "Enterprise Sales Narrative", desc: "Equipping enterprise reps to eliminate decision fatigue with CFOs." },
-    { title: "Funnel Economics Teardown", desc: "Full cognitive audit of activation, onboarding, and churn bottlenecks." }
+    { title: "High-Stakes Brand Narrative", desc: "Constructing unassailable positioning from first principles and sociological insight." },
+    { title: "Landing Page Architecture", desc: "Progressive disclosure flow engineered for technical and executive conversion." },
+    { title: "Discourse & Social Dialectics", desc: "Steelmanning sensitive themes to spark constructive community engagement." },
+    { title: "Epistemic Teardown", desc: "Auditing product claims and eliminating cognitive friction across the funnel." }
   ];
 
   const stages = [
-    { title: "Seed / Pre-Series A", desc: "Establishing initial product-market narrative defensibility." },
-    { title: "Growth / Scale (Series A-C)", desc: "Expanding ACV, reducing CAC, and clarifying category dominance." },
-    { title: "Enterprise & Global Corporate", desc: "Translating deep technical systems for conservative risk managers." },
-    { title: "Strategic Creative Agency", desc: "Embedding high-level narrative strategy into client deliverables." }
+    { title: "Seed / Pre-Series A", desc: "Establishing initial category definition and defensible narrative." },
+    { title: "Growth / Scale (Series A-C)", desc: "Expanding pipeline velocity and eliminating competitive confusion." },
+    { title: "Enterprise & Global Corporate", desc: "Translating deep technical systems into CFO/executive confidence." },
+    { title: "Civic & Academic Initiative", desc: "Bridge communications between institutions and grassroots communities." }
   ];
 
   const timelines = [
-    { title: "Immediate Sprint (Next 2 Weeks)", desc: "High-priority, intensive sprint deployment." },
-    { title: "Upcoming Quarter (Q1/Q2)", desc: "Strategic planning for next milestone release." },
-    { title: "Advisory / Retainer", desc: "Ongoing narrative architecture and messaging oversight." }
+    { title: "Immediate Sprint (Next 2 Weeks)", desc: "Intensive, high-priority narrative deployment." },
+    { title: "Upcoming Quarter (Q1/Q2)", desc: "Strategic architecture for next major product or campaign launch." },
+    { title: "Advisory & Strategic Retainer", desc: "Ongoing narrative governance and conversion oversight." }
   ];
 
   function init() {
@@ -58,7 +58,7 @@ const BriefEngine = (function() {
           </button>
         </div>
         <div class="modal-body" id="briefBody">
-          <!-- Rendered dynamically by renderStep() -->
+          <!-- Rendered dynamically -->
         </div>
       </div>
     `;
@@ -82,7 +82,6 @@ const BriefEngine = (function() {
       }
     });
 
-    // Attach open triggers across the page
     document.querySelectorAll('[data-trigger-brief]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -136,14 +135,14 @@ const BriefEngine = (function() {
           `).join('')}
         </div>
         <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
-          <button class="btn btn-primary" id="briefNextStepBtn">Next: Company Stage &rarr;</button>
+          <button class="btn btn-primary" id="briefNextStepBtn">Next: Organization Maturity &rarr;</button>
         </div>
       `;
     } else if (currentStep === 2) {
       html += `
         <div>
           <span class="mono" style="color: var(--accent);">STEP 02 OF 03</span>
-          <h3 style="font-size: 1.5rem; margin-top: 0.35rem; margin-bottom: 0.5rem;">Company Maturity &amp; Target Timeline</h3>
+          <h3 style="font-size: 1.5rem; margin-top: 0.35rem; margin-bottom: 0.5rem;">Organizational Maturity &amp; Target Timeline</h3>
           <p style="font-size: 0.92rem; color: var(--text-secondary);">Calibrating organizational velocity and stakeholder requirements.</p>
         </div>
         <div>
@@ -157,7 +156,7 @@ const BriefEngine = (function() {
             `).join('')}
           </div>
 
-          <span class="mono" style="font-size: 0.7rem; color: var(--text-secondary);">TIMELINE / DEPLOYMENT HORIZON</span>
+          <span class="mono" style="font-size: 0.7rem; color: var(--text-secondary);">DEPLOYMENT TIMELINE</span>
           <div class="brief-options-grid" style="margin-top: 0.4rem;">
             ${timelines.map(item => `
               <div class="brief-option-card timeline-card ${state.timeline === item.title ? 'selected' : ''}" data-val="${item.title}">
@@ -181,7 +180,7 @@ const BriefEngine = (function() {
 I reviewed your portfolio and narrative architecture framework. We are looking for strategic narrative support:
 
 - Primary Objective: ${state.objective}
-- Company Maturity: ${state.stage}
+- Organization Maturity: ${state.stage}
 - Targeted Timeline: ${state.timeline}
 
 Context on our product / challenge:
@@ -276,7 +275,6 @@ Best,
       });
     }
 
-    // Step 1 option clicks
     document.querySelectorAll('.brief-option-card[data-val]').forEach(card => {
       card.addEventListener('click', () => {
         if (currentStep === 1) {

@@ -17,6 +17,7 @@
   color: var(--text-primary);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -126,7 +127,7 @@
   border-color: var(--accent);
 }
 
-/* Formula Block */
+/* Formula Banner */
 .formula-banner {
   background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
@@ -173,7 +174,7 @@
   text-transform: uppercase;
 }
 
-/* Toggle Switch (Before / After Inspector) */
+/* Before / After Toggle Switch Group */
 .toggle-switch-group {
   display: inline-flex;
   padding: 4px;
@@ -192,6 +193,7 @@
   text-transform: uppercase;
   color: var(--text-secondary);
   transition: all var(--transition-fast);
+  cursor: pointer;
 }
 
 .toggle-btn.active {
@@ -200,14 +202,175 @@
   border: 1px solid var(--border-medium);
 }
 
-.toggle-btn.active.tone-danger {
-  color: var(--status-danger);
+.toggle-btn.active.tone-legacy {
+  color: var(--status-legacy);
   border-color: rgba(255, 77, 77, 0.4);
 }
 
-.toggle-btn.active.tone-success {
-  color: var(--status-success);
+.toggle-btn.active.tone-overhaul {
+  color: var(--status-overhaul);
   border-color: rgba(204, 255, 0, 0.4);
+}
+
+/* =========================================================
+   ZERO-EFFORT AUTOMATED RICH LINK EMBED CARD COMPONENT
+   ========================================================= */
+.rich-link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0;
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.rich-link-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--link-title);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.rich-link-card:hover {
+  background: var(--bg-elevated);
+  border-color: var(--border-focus);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.rich-link-card:hover::before {
+  opacity: 1;
+}
+
+.rich-link-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.rich-link-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rich-link-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--link-title);
+  line-height: 1.3;
+  transition: color var(--transition-fast);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rich-link-card:hover .rich-link-title {
+  color: var(--link-title-hover);
+}
+
+.rich-link-external-icon {
+  color: var(--text-tertiary);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.rich-link-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rich-link-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.rich-link-domain {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.05em;
+  background: var(--bg-primary);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-subtle);
+}
+
+.rich-link-copy-btn {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-tertiary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-xs);
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.rich-link-copy-btn:hover {
+  color: var(--accent);
+  border-color: var(--border-subtle);
+  background: var(--bg-primary);
+}
+
+.rich-link-thumbnail-box {
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.rich-link-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.rich-link-card:hover .rich-link-thumbnail {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .rich-link-card {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .rich-link-thumbnail-box {
+    width: 100%;
+    height: 120px;
+  }
 }
 
 /* Modals Overlay & Frame */
@@ -216,6 +379,7 @@
   inset: 0;
   background: rgba(8, 8, 10, 0.88);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
@@ -276,6 +440,7 @@
   align-items: center;
   justify-content: center;
   transition: color var(--transition-fast), transform var(--transition-fast);
+  cursor: pointer;
 }
 
 .modal-close-btn:hover {

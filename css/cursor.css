@@ -28,8 +28,8 @@
 
 /* Hover expansion state */
 body.cursor-hover .custom-cursor-ring {
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   border-color: var(--accent);
   background-color: rgba(204, 255, 0, 0.08);
 }
@@ -42,7 +42,7 @@ body.cursor-active .custom-cursor-ring {
   transform: translate(-50%, -50%) scale(0.85);
 }
 
-/* Hide on touch devices */
+/* Hide cleanly on touch devices */
 @media (pointer: coarse) {
   .custom-cursor-dot,
   .custom-cursor-ring {

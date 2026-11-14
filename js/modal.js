@@ -3,7 +3,6 @@
  */
 const ModalEngine = (function() {
   let modalOverlay = null;
-  let modalDialog = null;
   let currentCase = null;
 
   function init() {
@@ -40,7 +39,6 @@ const ModalEngine = (function() {
     `;
 
     document.body.appendChild(modalOverlay);
-    modalDialog = modalOverlay.querySelector('.modal-dialog');
   }
 
   function bindEvents() {
@@ -123,13 +121,13 @@ const ModalEngine = (function() {
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
           <h4>[04] Copy Inspector: Anatomy of the Overhaul</h4>
           <div class="toggle-switch-group">
-            <button class="toggle-btn tone-danger" id="toggleLegacyBtn">Legacy Copy</button>
-            <button class="toggle-btn tone-success active" id="toggleOverhaulBtn">Strategic Overhaul</button>
+            <button class="toggle-btn tone-legacy" id="toggleLegacyBtn">Legacy Copy</button>
+            <button class="toggle-btn tone-overhaul active" id="toggleOverhaulBtn">Strategic Overhaul</button>
           </div>
         </div>
 
         <div id="inspectorDisplayBox" class="inspector-box overhaul-mode">
-          <div class="mono" id="inspectorBadge" style="color: var(--status-success);">● STRATEGIC OVERHAUL APPLIED</div>
+          <div class="mono" id="inspectorBadge" style="color: var(--status-overhaul);">● STRATEGIC OVERHAUL APPLIED</div>
           <div class="inspector-headline" id="inspectorHeadline">${item.synthesis.beforeAfter.overhaul.headline}</div>
           <div class="inspector-body" id="inspectorBody">${item.synthesis.beforeAfter.overhaul.body}</div>
           <div class="inspector-critique mono" id="inspectorCritique">${item.synthesis.beforeAfter.overhaul.breakdown}</div>
@@ -151,7 +149,7 @@ const ModalEngine = (function() {
       </div>
     `;
 
-    // Wire up the Before / After Inspector toggle
+    // Wire up Before/After toggle
     const legacyBtn = document.getElementById('toggleLegacyBtn');
     const overhaulBtn = document.getElementById('toggleOverhaulBtn');
     const displayBox = document.getElementById('inspectorDisplayBox');
@@ -165,7 +163,7 @@ const ModalEngine = (function() {
       overhaulBtn.classList.remove('active');
       displayBox.className = 'inspector-box legacy-mode';
       badge.textContent = '▲ LEGACY / UNCONVERTED COPY';
-      badge.style.color = 'var(--status-danger)';
+      badge.style.color = 'var(--status-legacy)';
       headline.textContent = item.synthesis.beforeAfter.legacy.headline;
       body.textContent = item.synthesis.beforeAfter.legacy.body;
       critique.textContent = `DIAGNOSIS: ${item.synthesis.beforeAfter.legacy.critique}`;
@@ -176,13 +174,12 @@ const ModalEngine = (function() {
       legacyBtn.classList.remove('active');
       displayBox.className = 'inspector-box overhaul-mode';
       badge.textContent = '● STRATEGIC OVERHAUL APPLIED';
-      badge.style.color = 'var(--status-success)';
+      badge.style.color = 'var(--status-overhaul)';
       headline.textContent = item.synthesis.beforeAfter.overhaul.headline;
       body.textContent = item.synthesis.beforeAfter.overhaul.body;
       critique.textContent = `SYSTEMIC RATIONALE: ${item.synthesis.beforeAfter.overhaul.breakdown}`;
     });
 
-    // Show modal
     modalOverlay.classList.add('active');
     modalOverlay.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';

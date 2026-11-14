@@ -88,9 +88,9 @@
 
 /* HERO SECTION */
 .section-hero {
-  padding-top: clamp(6rem, 12vh, 10rem);
-  padding-bottom: clamp(4rem, 8vh, 7rem);
-  min-height: 90vh;
+  padding-top: clamp(5.5rem, 10vh, 9rem);
+  padding-bottom: clamp(3.5rem, 7vh, 6rem);
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,13 +109,13 @@
 }
 
 .hero-headline {
-  font-size: clamp(2.4rem, 6vw, 4.8rem);
-  line-height: 1.05;
+  font-size: clamp(2.2rem, 5.5vw, 4.4rem);
+  line-height: 1.08;
   font-weight: 700;
   letter-spacing: -0.04em;
-  max-width: 22ch;
+  max-width: 24ch;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .hero-headline em {
@@ -125,11 +125,11 @@
 }
 
 .hero-lead {
-  font-size: clamp(1.1rem, 2vw, 1.35rem);
-  line-height: 1.6;
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  line-height: 1.62;
   color: var(--text-secondary);
-  max-width: 62ch;
-  margin-bottom: 2.75rem;
+  max-width: 64ch;
+  margin-bottom: 2.5rem;
 }
 
 .hero-actions {
@@ -137,7 +137,7 @@
   align-items: center;
   gap: 1.25rem;
   flex-wrap: wrap;
-  margin-bottom: 4.5rem;
+  margin-bottom: 4rem;
 }
 
 /* Metric Ticker Bar */
@@ -145,7 +145,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  padding: 2rem 2.5rem;
+  padding: 1.8rem 2.25rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
@@ -159,24 +159,24 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--accent) 0%, transparent 60%);
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 65%);
 }
 
-/* SECTION 01: QUAD FOUNDATION / ARSENAL */
+/* SECTION 01: PILLARS / ARSENAL */
 .section-arsenal {
-  padding: 6rem 0;
+  padding: 5.5rem 0;
 }
 
 .arsenal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
 
 .arsenal-card {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.15rem;
   padding: 2.25rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
@@ -210,7 +210,7 @@
 
 /* SECTION 02: DEEP DIVES (CASE STUDIES) */
 .section-deepdives {
-  padding: 6rem 0;
+  padding: 5.5rem 0;
 }
 
 .deepdives-grid {
@@ -223,11 +223,11 @@
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: clamp(1.75rem, 4vw, 3rem);
+  padding: clamp(1.75rem, 3.5vw, 3rem);
   transition: all var(--transition-smooth);
   display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -240,14 +240,14 @@
 .deepdive-meta {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
 }
 
 .deepdive-headline {
-  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
-  line-height: 1.15;
+  font-size: clamp(1.5rem, 2.3vw, 2.2rem);
+  line-height: 1.18;
   margin-bottom: 1rem;
   letter-spacing: -0.025em;
 }
@@ -256,7 +256,7 @@
   color: var(--text-secondary);
   font-size: 1.02rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   max-width: 54ch;
 }
 
@@ -264,28 +264,28 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 1.25rem;
-  padding: 1.5rem;
+  padding: 1.4rem;
   background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xs);
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 @media (max-width: 900px) {
   .deepdive-card {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.75rem;
   }
 }
 
-/* SECTION 03: HORIZONS (THOUGHT LEADERSHIP) */
+/* SECTION 03: HORIZONS (THOUGHT LEADERSHIP & EMBEDS) */
 .section-horizons {
-  padding: 6rem 0;
+  padding: 5.5rem 0;
 }
 
 .horizons-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
@@ -297,7 +297,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1.75rem;
+  gap: 1.5rem;
   transition: all var(--transition-smooth);
 }
 
@@ -314,7 +314,7 @@
 }
 
 .horizon-card h3 {
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   line-height: 1.25;
   letter-spacing: -0.02em;
 }
@@ -327,13 +327,13 @@
 
 /* SECTION 04: PHILOSOPHY & PROFILE */
 .section-philosophy {
-  padding: 6rem 0 8rem;
+  padding: 5.5rem 0 8rem;
 }
 
 .philosophy-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .bio-card {
@@ -457,11 +457,11 @@
 }
 
 .inspector-box.legacy-mode {
-  border-left: 3px solid var(--status-danger);
+  border-left: 3px solid var(--status-legacy);
 }
 
 .inspector-box.overhaul-mode {
-  border-left: 3px solid var(--status-success);
+  border-left: 3px solid var(--status-overhaul);
 }
 
 .inspector-headline {

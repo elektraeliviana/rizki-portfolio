@@ -2,7 +2,6 @@
  * Fluid Inverted Custom Cursor with Lerp Physics & Magnetic Interactions
  */
 (function() {
-  // Check if device is touch-enabled
   if (window.matchMedia('(pointer: coarse)').matches) {
     return;
   }
@@ -21,7 +20,6 @@
   let ringY = -100;
   let dotX = -100;
   let dotY = -100;
-  let isHovering = false;
   let targetMagnetic = null;
 
   window.addEventListener('mousemove', (e) => {
@@ -37,34 +35,28 @@
     document.body.classList.remove('cursor-active');
   });
 
-  // Attach magnetic hover triggers to interactive elements
   function attachHoverTriggers() {
-    const interactives = document.querySelectorAll('a, button, .card-interactive, .toggle-btn, .brief-option-card');
+    const interactives = document.querySelectorAll('a, button, .card-interactive, .toggle-btn, .rich-link-card, .brief-option-card');
     interactives.forEach(el => {
       el.addEventListener('mouseenter', () => {
         document.body.classList.add('cursor-hover');
-        isHovering = true;
-        if (el.classList.contains('btn') || el.classList.contains('toggle-btn')) {
+        if (el.classList.contains('btn') || el.classList.contains('toggle-btn') || el.classList.contains('rich-link-copy-btn')) {
           targetMagnetic = el;
         }
       });
       el.addEventListener('mouseleave', () => {
         document.body.classList.remove('cursor-hover');
-        isHovering = false;
         targetMagnetic = null;
       });
     });
   }
 
-  // Animation Loop with Linear Interpolation (Lerp)
   function renderCursor() {
-    // Dot follows fast
     dotX += (mouseX - dotX) * 0.75;
     dotY += (mouseY - dotY) * 0.75;
     dot.style.left = `${dotX}px`;
     dot.style.top = `${dotY}px`;
 
-    // Ring follows smoothly with subtle magnetic attraction
     let targetX = mouseX;
     let targetY = mouseY;
 
@@ -72,8 +64,8 @@
       const rect = targetMagnetic.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
-      targetX = centerX + (mouseX - centerX) * 0.25;
-      targetY = centerY + (mouseY - centerY) * 0.25;
+      targetX = centerX + (mouseX - centerX) * 0.28;
+      targetY = centerY + (mouseY - centerY) * 0.28;
     }
 
     ringX += (targetX - ringX) * 0.18;
